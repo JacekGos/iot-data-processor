@@ -4,8 +4,8 @@
 <h2 align="left">General info</h2>
 
 This is the backend part of iot-data-processor based on Event-Driven Microservices architecture. </br>
-User Interface created by using React:
-https://github.com/JacekGos/team-finder-ui-v2
+User Interface created by using React with Typescript:
+
 
 A system for collecting, processing and visualizing data from devices and controlling them.<br>
 An application written in a microservice architecture using event-driven development.<br>
