@@ -1,7 +1,7 @@
 
 <h1 align="center">iot-data-processor</h1>
 
-<h2 align="left">General info</h2>
+<h2 align="left">General info about app</h2>
 
 This is the backend part of iot-data-processor based on Event-Driven Microservices architecture. </br>
 User Interface created by using React:
