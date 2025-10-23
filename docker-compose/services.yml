@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+
+  config-service:
+    image: ${GROUP_ID}/config.service:${SERVICE_VERSION:-latest}
+    ports:
+      - "5007:5007"
+      - "8888:8888"
+    volumes:
+      - "./docker-logs:/workspace/config-server/logs"
+    environment:
+      - "JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5007 -Xms128m -Xmx256m"
+      - "LOG_APP-NAME=config-service"
+      - "SERVER_PORT=8888"
+#      - "ENCRYPT_KEY=${ENCRYPT_KEY}"
+#      - "MANAGEMENT_ZIPKIN_TRACING_ENDPOINT=http://zipkin:9411"
+    networks:
+      - ${GLOBAL_NETWORK:-services}

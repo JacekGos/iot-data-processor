@@ -9,6 +9,16 @@ logging:
 spring:
   application:
     name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/JacekGos/iot-data-processor-config-server-repository.git
+          default-label: main
+          username: JacekGos
+          password: ${GITHUB_TOKEN}
+          clone-on-start: true
+    fail-fast: true
 
 log:
   app-name: config-server

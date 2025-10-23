@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+/docker-compose/docker-logs/
+/config-server/logs/
+/config-service/src/main/resources/.env
