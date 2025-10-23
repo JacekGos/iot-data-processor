@@ -52,7 +52,7 @@
 		<dependencies>
 
 			<dependency>
-				<groupId>com.microservices.demo</groupId>
+				<groupId>com.iot</groupId>
 				<artifactId>app-config-data</artifactId>
 				<version>${project.version}</version>
 			</dependency>
