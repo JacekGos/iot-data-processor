@@ -1,8 +1,21 @@
 spring:
   application:
     name: mqtt-to-kafka-service
+  profiles:
+    active: mqtt_to_kafka
+  config:
+    import: 'configserver:'
+  cloud:
+    config:
+      name: mqtt-to-kafka-service,config-client
+      username: user
+      password: password
+      uri: http://localhost:8888
 
 logging:
   level:
-    ROOT: DEBUG
+    ROOT: INFO
     com.iot: DEBUG
+
+#mqtt-to-kafka-service:
+#  enable-mock-data: true
