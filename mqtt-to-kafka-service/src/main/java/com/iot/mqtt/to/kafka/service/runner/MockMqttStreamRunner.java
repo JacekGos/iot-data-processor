@@ -7,7 +7,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 @Component
 @ConditionalOnProperty(name = "mqtt-to-kafka-service.enable-mock-data", havingValue = "true")
@@ -35,6 +37,8 @@ public class MockMqttStreamRunner implements StreamRunner {
                 LOG.info("streaming some mock data");
                 sleep(sleepTimeoutMs);
             }
+
+
         });
     }
 

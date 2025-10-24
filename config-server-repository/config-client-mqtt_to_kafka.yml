@@ -2,6 +2,6 @@ server:
   port: 8181
 
 mqtt-to-kafka-service:
-  welcome-message: Hello
+  welcome-message: Hello Kafka
   enable-mock-data: true
   mock-sleep-ms: 10000
