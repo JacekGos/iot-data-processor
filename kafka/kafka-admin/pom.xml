@@ -16,6 +16,7 @@
             <groupId>com.iot</groupId>
             <artifactId>app-config-data</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.iot</groupId>
             <artifactId>common-config</artifactId>
@@ -24,6 +25,16 @@
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 </project>
