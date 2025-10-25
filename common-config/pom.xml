@@ -7,14 +7,27 @@
         <groupId>com.iot</groupId>
         <artifactId>iot-processor</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
-    <artifactId>kafka-admin</artifactId>
+
+    <artifactId>common-config</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.iot</groupId>
             <artifactId>app-config-data</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.retry</groupId>
+            <artifactId>spring-retry</artifactId>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-aop</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
+
 </project>
