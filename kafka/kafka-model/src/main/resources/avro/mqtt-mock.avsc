@@ -1,0 +1,14 @@
+{"namespace": "com.iot.kafka.avro.model",
+  "type": "record",
+  "name": "MqttMockAvroModel",
+  "fields": [
+    { "name": "deviceId", "type": "string" },
+    { "name": "timestamp", "type": "long", "logicalType": "timestamp-millis" },
+    { "name": "metricType", "type": ["null", "string"], "default": null },
+    { "name": "value", "type": ["null", "double"], "default": null },
+    { "name": "unit", "type": ["null", "string"], "default": null },
+    { "name": "status", "type": ["null", "string"], "default": null },
+    { "name": "batteryLevel", "type": ["null", "int"], "default": null },
+    { "name": "location", "type": ["null", "string"], "default": null }
+  ]
+}

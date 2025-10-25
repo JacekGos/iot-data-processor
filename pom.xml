@@ -23,6 +23,9 @@
 		<module>config-service</module>
 		<module>app-config-data</module>
 		<module>kafka</module>
+		<module>kafka/kafka-admin</module>
+		<module>kafka/kafka-model</module>
+		<module>kafka/kafka-producer</module>
 	</modules>
 	<packaging>pom</packaging>
 	<url/>
@@ -33,7 +36,7 @@
 		<spring-cloud-dependencies.version>2024.0.1</spring-cloud-dependencies.version>
 		<spring-cloud.version>4.0.3</spring-cloud.version>
 		<java-dotenv.version>5.2.2</java-dotenv.version>
-
+		<avro.version>1.10.0</avro.version>
 	</properties>
 
 	<dependencies>
@@ -106,6 +109,12 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-gateway</artifactId>
 				<version>${spring-cloud.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.avro</groupId>
+				<artifactId>avro</artifactId>
+				<version>${avro.version}</version>
 			</dependency>
 
 			<dependency>
