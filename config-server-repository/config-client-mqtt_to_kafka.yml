@@ -12,3 +12,13 @@ retry-config:
   multiplier: 2.0
   maxAttempts: 3
   sleep-time-ms: 2000
+
+kafka-config:
+  bootstrap-servers: localhost:19092
+  schema-registry-url-key: schema.registry.url
+  schema-registry-url: http://localhost:8081
+  topic-name: mqtt-sensor-topic
+  topic-names-to-create:
+    - mqtt-sensor-topic
+  num-of-partitions: 3
+  replication-factor: 1
