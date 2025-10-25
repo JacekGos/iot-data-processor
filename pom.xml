@@ -64,17 +64,23 @@
 			</dependency>
 
 			<dependency>
-				<groupId>com.microservices.demo</groupId>
+				<groupId>com.iot</groupId>
+				<artifactId>common-config</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.iot</groupId>
 				<artifactId>kafka-model</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.microservices.demo</groupId>
+				<groupId>com.iot</groupId>
 				<artifactId>kafka-admin</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.microservices.demo</groupId>
+				<groupId>com.iot</groupId>
 				<artifactId>kafka-producer</artifactId>
 				<version>${project.version}</version>
 			</dependency>
